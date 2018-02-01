@@ -17,10 +17,13 @@ var populateList = function(beers) {
   var ul = document.querySelector('#beer-list');
   beers.forEach(function(beer) {
     var li = document.createElement('li');
+    var img = document.createElement('img');
     li.innerText = beer.name;
+    img.innerHTML = `<img src=${beer.image_url}>`;
     ul.appendChild(li);
   })
 }
+
 
 
 
